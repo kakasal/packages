@@ -8,5 +8,12 @@ To install follow these steps
 3- Change config
 
 
-How to Use?
+# Confgiure
+
+1- Add this in provider 'BizsmsServiceProvider::class'
+2- add this alieas ``bizsms => BizsmsServiceProvider::class``
+
+# How to use?
+
+bizsms::send('0346123456', 'SMS Body');
 
