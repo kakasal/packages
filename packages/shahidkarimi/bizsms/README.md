@@ -13,24 +13,22 @@ To install follow these steps
 
 # Confgiure
 
-1- Add this in config/app.php 'BizsmsServiceProvider::class'
+1- Add this to config/app.php `BizsmsServiceProvider::class`
 
 2- Add this alias `bizsms => BizsmsServiceProvider::class`
 
 # How to use?
 
-bizsms::send('0346123456', 'SMS Body');
+`bizsms::send('0346123456', 'SMS Body');`
 
 # Adding SmsNotifiable Trait to User.php
 The easiest way to send sms to a user is just using the SmsNotifiable Trait in user user class as 
 
-```
-class User extends Authenticatable
+```class User extends Authenticatable
 {
     use SmsNotifiable;
-}
-```
+}```
 
 Sending SMS
-$user->notifyBySms("Hello sir");
+```$user->notifyBySms("Hello sir");```
 
